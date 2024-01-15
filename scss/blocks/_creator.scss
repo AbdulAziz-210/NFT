@@ -16,6 +16,7 @@
     @include textStyle($fs:38px, $fw:600, $lh:120%);
 }
 .creator__text{
+    margin-bottom: 60px;
     text-transform: capitalize;
     @include textStyle($fs:22px, $fw:400, $lh:160%);
     @include textStyle();
@@ -66,6 +67,16 @@
 }
 
 
+
+
+.users{
+    margin-bottom: 30px;
+    display: flex;
+    // justify-content: space-between;
+}
+.users__folder+.users__folder{
+    margin-left: 30px;
+}
 .users__folder{
     width: 240px;
     position: relative;
@@ -103,6 +114,9 @@
     top: 20px;
     left: 20px;
 }
+.users__link--number{
+    padding: 3px 6px;
+}
 .users__img{
     margin: 20px;
 }
@@ -111,6 +125,7 @@
     @include textStyle($fs:22px, $fw:600, $lh:140%);
 }
 .users__text{
+    margin-bottom: 60px;
     display: inline-block;
     margin-bottom: 20px;
     @include textStyle($fs:16px, $fw:400, $lh:140%);

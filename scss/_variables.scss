@@ -33,7 +33,7 @@
         background-image: url($bgImg);
         background-repeat: no-repeat;
         background-size: 100%;
-        left: $blSize;
+        transform: translateX(-32px);
     }
     &:hover::before{
         background-image: url($bgImgHover);

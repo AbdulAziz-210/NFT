@@ -833,7 +833,7 @@ template {
 }
 
 .creator-section {
-  margin-bottom: 100px;
+  margin-bottom: 160px;
 }
 
 .creator {
@@ -991,6 +991,64 @@ template {
   font-weight: 400;
   line-height: 140%;
   font-family: "Space Mono";
+}
+
+.browse-section {
+  margin-bottom: 160px;
+}
+
+.browse {
+  display: flex;
+  flex-direction: column;
+}
+
+.browse__title {
+  margin-bottom: 60px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: row;
+  color: #fff;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.browse__wrap {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.browse__wrap-sec {
+  display: flex;
+}
+
+.browse__folder + .browse__folder {
+  margin-left: 30px;
+}
+
+.browse__folder {
+  width: 240px;
+  background-color: #3B3B3B;
+  border-radius: 20px;
+}
+
+.browse__strong {
+  padding: 20px 30px 25px 30px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: row;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
 }
 
 .magic-section {

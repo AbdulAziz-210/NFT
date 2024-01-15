@@ -1,0 +1,41 @@
+
+
+
+.browse-section{
+    margin-bottom: 160px;
+}
+.browse{
+    display: flex;
+    flex-direction: column;
+}
+.browse__title{
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    @include display();
+    @include textStyle($fs:38px, $fw:600, $lh:120%,);
+}
+.browse__wrap{
+    display: flex;
+    margin-bottom: 30px;
+}
+.browse__wrap-sec{
+    display: flex;
+}
+.browse__folder+.browse__folder{
+    margin-left: 30px;
+}
+.browse__folder{
+    width: 240px;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+}
+
+.browse__strong{
+    padding: 20px 30px 25px 30px;
+    @include display();
+    @include textStyle($fs:22px, $fw:600, $lh:140%,);
+    text-transform: capitalize;
+}
+
+
+

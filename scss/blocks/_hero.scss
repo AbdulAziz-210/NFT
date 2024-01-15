@@ -1,0 +1,87 @@
+
+
+
+.hero-section{
+    padding: 80px 0;
+}
+.hero{
+    @include display($align:center, $justify:space-between)
+}
+.hero__content{
+    width: 510px;
+    text-transform: capitalize;
+}
+.hero__title{
+    margin-bottom: 20px;
+    @include textStyle($fs:67px, $fw:600, $lh:110%, $textAlign:start)
+}
+.hero__text{
+    margin-bottom: 30px;
+    @include textStyle($fs:22px, $fw:400, $lh:160%, $textAlign:start)
+}
+.hero__link{
+    margin-bottom: 30px;
+    @include btn($w:224px, $bgImg:"../images/hero/rocket.svg", $blSize:50px, $bgImgHover:"../images/hero/rocket-hover.svg")
+}
+.statistic{
+    gap: 30px;
+    @include display($align:center, $justify:start)
+}
+.statistic__item>strong{
+    text-transform: capitalize;
+    font-family: "Space Mono", monospace;
+    @include textStyle($fs:28px, $fw:700, $lh:140%);
+}
+.statistic__item>p{
+    text-transform: capitalize;
+    @include textStyle($fs:24px, $fw:400, $lh:160%);
+}
+.walking{
+    padding: 20px;
+    padding-top: 421px;
+    min-width: 510px;
+    border-radius: 20px;
+    background-color: #3B3B3B;
+
+    background-image: url("../images/hero/hero-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 401px;
+}
+.walking__subtitle{
+    margin-bottom: 10px;
+    display: inline-block;
+    text-transform: capitalize;
+    @include textStyle($fs:22px, $fw:600, $lh:140%);
+}
+.walking__avatar-wrap{
+    gap: 12px;
+    @include display($align:center)
+}
+.walking__avatar-text{
+    @include textStyle($fs:16px, $fw:400, $lh:140%);
+}
+
+@media (max-width:937px){
+    .hero__title{
+        margin-bottom: 20px;
+        @include textStyle($fs:38px, $fw:600, $lh:120%, $textAlign:start)
+    }
+    .hero__text{
+        margin-bottom: 20px;
+        @include textStyle($fs:16px, $fw:400, $lh:140%, $textAlign:start)
+    }
+    .statistic__item>strong{
+        @include textStyle($fs:22px, $fw:700, $lh:160%);
+    }
+    .statistic__item>p{
+        text-transform: capitalize;
+        @include textStyle($fs:16px, $fw:400, $lh:140%);
+    }
+    .walking{
+        width: 330px;
+        padding-top: 241px;
+        background-image: url("../../images/hero/hero-tablet.png");
+        background-repeat: no-repeat;
+        background-size: 100% 221px;
+    }
+}

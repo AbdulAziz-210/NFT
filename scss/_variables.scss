@@ -1,0 +1,48 @@
+
+
+@mixin display($justify:start, $align:start, $direction:row){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+@mixin textStyle($color:#fff, $textAlign:center, $fs:16px, $fw:400, $lh:140%){
+    color: $color;
+    text-align: $textAlign;
+    font-size: $fs;
+    font-style: normal;
+    font-weight: $fw;
+    line-height: $lh;
+}
+@mixin btn($w:152px, $py:20px, $bg:#A259FF, $bgImg:"../images/avatar.svg", $bgImgHover:"../images/avater-hover.svg", $blSize:30px){
+    position: relative;
+    width: $w;
+    padding: $py 0;
+    background-color: $bg;
+    display: inline-block;
+    border-radius: 20px;
+    padding-left: 32px;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: url($bgImg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: $blSize;
+    }
+    &:hover::before{
+        background-image: url($bgImgHover);
+    }
+    &:hover{
+        background-color: transparent;
+        border-color: $bg;
+         
+    }
+    @include textStyle($fw:600)
+}
+

@@ -1,0 +1,52 @@
+
+
+.trend-section{
+    margin-bottom: 160px;
+}
+
+.trend__title{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    @include display();
+    @include textStyle($fs:38px, $fw:600, $lh:120%);
+}
+.trand__text{
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    @include display();
+    @include textStyle($fs:22px, $fw:400, $lh:160%);
+}
+
+
+
+.trend__wrap{
+    display: flex;
+}
+.trend__folder+.trend__folder{
+    margin-left: 30px;
+}
+.trend__folder{
+    width: 330px;
+}
+.trend__img{
+    margin-bottom: 15px;
+}
+.trend__list{
+    margin-bottom: 15px;
+    display: flex;
+}
+.trend__item+.trend__item{
+    margin-left: 15px;
+}
+.trend__strong{
+    display: inline-block;
+    margin-bottom: 10px;
+    @include textStyle();
+}
+.trend__avatar-wrap{
+
+    @include display($align:center);
+    @include textStyle();
+}
+
+

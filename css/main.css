@@ -749,6 +749,89 @@ template {
     display: block;
   }
 }
+.trend-section {
+  margin-bottom: 160px;
+}
+
+.trend__title {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: row;
+  color: #fff;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.trand__text {
+  margin-bottom: 60px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: row;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.trend__wrap {
+  display: flex;
+}
+
+.trend__folder + .trend__folder {
+  margin-left: 30px;
+}
+
+.trend__folder {
+  width: 330px;
+}
+
+.trend__img {
+  margin-bottom: 15px;
+}
+
+.trend__list {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.trend__item + .trend__item {
+  margin-left: 15px;
+}
+
+.trend__strong {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.trend__avatar-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 .magic-section {
   padding: 360px 0 60px;
   background-image: url("../images/magic/magic-img.png");
